@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <!--<button class="btn-success btn-sm"> -->
+                <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+            <!--</button> --> 
+        </li>
+        <li class="nav-item">
+            <!--<button class="btn-success btn-sm">-->
+                <a routerLink="create-employee" routerLinkActive="active" class="nav-link">Add Employee</a>
+            <!--</button>--> 
+        </li>
+    </ul>
+</nav>
+<h1 style="display: flex; justify-content: center;">{{ title() }}</h1>
+<div class="container" style="padding-bottom: 70px;">
+    <router-outlet>
+        
+    </router-outlet>
+</div>
+<footer class="footer" style=" position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    text-align: center;
+    color: white;">
+    <div class="container">
+        <span>
+            All Ringhts Reserved 2025
+        </span>
+    </div>
+</footer>   
+    
